@@ -1,0 +1,104 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Travel cost</title>
+</head>
+<body style="background-color: aqua;">
+    <center>
+        <img src="DeLong.jpg"/>
+    </center>
+    <h1>Travel Exxpense Report</h1>
+    <hr/>
+    <ol type="1">
+        <li>
+            <label for="txtFname">First name:</label>
+     <input id="txtFname" type="text" name="firsname"/>
+     <label for="txtLname">Last name:</label>
+     <input id="txtLname" type="text" name="lastname"/>
+        </li>
+        <li>
+            <label for="social">Social Secutiry Number:</label>
+     <input id="social" type="text" name="social"/>
+        </li>
+        <li>
+            <td>Department</td>
+            <td>
+                <select>
+                    <option value="acc">Accouting</option>
+                    <option value="it">IT</option>
+                    <option value="hr">HR</option>
+                </select>
+            </td>
+        </li>
+        <li> Describe the purpose of your trip:</li>
+        <table>
+            <tr>
+            <td><input type="text"></td>
+            </tr>
+        </table>
+        <li>itemize your travel expenses</li>
+        <table border="1">
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td><input type="datetime" name="date" placeholder="mm/dd/yyyyy"></td>
+                <td><input type="text" name="Describe" placeholder="mm/dd/yyyyy"></td>
+                <td>
+                    <select>
+                        <option value="meal">Meal</option>
+                        <option value="drink">drink</option>
+                    </select>
+                </td>
+                <td><input type="number" name="amount" ></td>
+            </tr>
+            <tr>
+                <td><input type="datetime" name="date" placeholder="mm/dd/yyyyy"></td>
+                <td><input type="text" name="Describe" placeholder="mm/dd/yyyyy"></td>
+                <td>
+                    <select>
+                        <option value="meal">Meal</option>
+                        <option value="drink">drink</option>
+                    </select>
+                </td>
+                <td><input type="number" name="amount" ></td>
+            </tr>
+            <tr>
+                <td><input type="datetime" name="date" placeholder="mm/dd/yyyyy"></td>
+                <td><input type="text" name="Describe" placeholder="mm/dd/yyyyy"></td>
+                <td>
+                    <select>
+                        <option value="meal">Meal</option>
+                        <option value="drink">drink</option>
+                    </select>
+                </td>
+                <td><input type="number" name="amount" ></td>
+            </tr>
+            <tr>
+                <td><input type="datetime" name="date" placeholder="mm/dd/yyyyy"></td>
+                <td><input type="text" name="Describe" placeholder="mm/dd/yyyyy"></td>
+                <td>
+                    <select>
+                        <option value="meal">Meal</option>
+                        <option value="drink">drink</option>
+                    </select>
+                </td>
+                <td><input type="number" name="amount" ></td>
+            </tr>
+            </table>
+
+            <li>Have you submitted your recipes</li>
+            <input type="radio" id="yes" name="yes" value="yes"/>
+                    <label for="yes">Yes</label> 
+                <input type="no" id="no" name="no" value="no"/>
+                    <label for="no">No</label>
+        </br>
+        <input  type="submit" name="register" value="Submit the travel expense"/>
+<input  type="reset" name="cancel" value="Click to cancel"/>
+    </ol>
+    
+</body>
+</html>
