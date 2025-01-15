@@ -1,0 +1,101 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Jackson</title>
+<link rel="stylesheet" href="mainstyle.css"></link>
+<script>
+    function showAlert(event) {
+        event.preventDefault(); 
+        alert("Register");
+    }
+</script>
+</head>
+<body style="background-color: rgb(101, 183, 245);">
+    <center>
+    <img src="images/Jackson.gif"/>
+</center>
+<h1 >Registration form</h1>
+<form onsubmit="showAlert(event)">
+    <p align="center">Register your Jackson Electronic product here</p>
+
+    <label for="txtFname">First name:</label>
+     <input id="txtFname" type="text" name="firsname"/>
+     <label for="txtLname">Last name:</label>
+     <input id="txtLname" type="text" name="lastname"/>
+   </br>
+   <label for="txtAddress1">Address #1:</label>
+   <input id="txtAddress1" type="text" name="address1"/>
+</br>
+<label for="txtAddress2">Address #2:</label>
+   <input id="txtAddress2" type="text" name="address2"/>
+</br> 
+<label for="txtCity">City: </label>
+<input id="txtCity" type="text" name="city"/>
+<label for="txtState">State: </label>
+ <input id="txtState" type="text" name="state"/>
+<label for="txtZip">Zip:</label>
+<input id="txtZip" type="text" name="zip"/>
+</br>
+<label for="txtCountry">Country:</label>
+<input id="txtCountry" type="text" name="country" value="United State"/>
+<hr/>
+<label for="product">Product: </label>
+  <select id="product" name="product">
+    <option value="default" selected>ScanMaster</option>
+    <option value="Pr1">Product 1</option>
+    <option value="Pr2">Product 2</option>
+    <option value="Pr3">Product 3</option>
+    <option value="Pr4">Product 4</option>
+  </select>
+</br>
+<label for="boughtdate">Date Purchased:</label>
+<input id="boughtdate" type="datetime" name="boughtdate" placeholder="dd/mm/yyyy"/>
+</br>
+<label for="seri">Serial #:</label>
+<input id="seri" type="text" name="seri"/>
+</br>
+<div id="containerlabel">
+<div id="label"> <label for="usedfor">Used for:</label></div>
+<div id="radio">
+<input type="radio" id="home" name="usedfor" value="home">
+<label for="home">Home</label>
+
+  <input type="radio" id="edu" name="usedfor" value="edu">
+  <label for="edu">Educational Institution</label>
+</BR>
+  <input type="radio" id="business" name="usedfor" value="business">
+  <label for="business">Business</label>
+  <input type="radio" id="other" name="usedfor" value="other">
+  <label for="other">Other</label>
+</br>
+<input type="radio" id="gov" name="usedfor" value="gov">
+<label for="gov">Government</label><br>
+</div>
+</div>
+</br>
+<div id="containerlabel">
+<div id="label"><label for="system">System (check all that apply)</label></div>
+<div id="radio"> <input id="wind" type="checkbox" name="wind" > 
+<label for="wind">Windows</label>
+<input id="unix" type="checkbox" name="unix" value="unix"> 
+<label for="unix">UNIX</label>
+</br>
+<input id="mac" type="checkbox" name="mac" > 
+<label for="mac">Macintosh</label>
+<input id="other" type="checkbox" name="other" value="other"> 
+<label for="other">Other</label>
+</div>
+</div>
+<hr/>
+<div id="cmt">
+<label for="cmt">Comments ?</label>
+<input id="cmt" type="text" name="comment"/>
+</div>
+</br>
+<div class="center">
+<input  type="submit" name="register" value="Click to register"/>
+<input  type="reset" name="cancel" value="Click to cancel"/>
+</div>
+</form>
+</body>
+</html>
