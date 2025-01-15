@@ -1,0 +1,87 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Online Classifieds</title>
+<script>
+    function openHelpPage() {
+        window.location.href = "help.html"; 
+    }
+    function showAlert(event) {
+        event.preventDefault(); 
+        alert("Register");
+    }
+
+</script>
+</head>
+<body style="background-color: aqua;">
+    <h1 style="color: red;">Online Classifieds Search Form</h1>
+<hr/>
+<ol type="1">
+    <li><b>Search for a classied in the following sections:</b>
+        <table>
+            <tr>
+                <td><input type="radio" id="employ" name="firstsection" value="employment"/>
+                    <label for="employ">Employment</label> 
+                <td><input type="radio" id="person" name="firstsection" value="personal"/>
+                    <label for="person">Personal</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="sale" name="firstsection" value="forsale"/>
+                    <label for="sale">For Sale</label> 
+                <td><input type="radio" id="misce" name="firstsection" value="miscellanecus"/>
+                    <label for="misce">Miscellanecus</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="house" name="firstsection" value="housing"/>
+                    <label for="house">Housing</label> 
+                <td><input type="radio" id="all" name="firstsection" value="alloftheaove"/>
+                    <label for="all">All of the above</label></td>
+            </tr>
+        </table>
+    </li>
+    <li><b>Search the following publications:</b>
+        <table>
+        <tr>
+            <td><input type="checkbox" id="midwest" name="midwest" value="midwesttime"/>
+                <label for="midwest">Midwest times</label> </td>
+            <td><input type="checkbox" id="modern" name="modern" value="modern"/>
+                <label for="modern">Modern News</label></td>
+            <td><input type="checkbox" id="employ" name="employ" value="employ"/>
+                <label for="employ">Employment Today</label></td>
+
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="great" name="great" value="great"/>
+                <label for="great">Great Lakes Classifieds</label> 
+            <td><input type="checkbox" id="midd" name="midd" value="middleton"/>
+                <label for="midd">Middleton Daily</label></td>
+            <td><input type="checkbox" id="cash" name="cash" value="cash"/>
+                <label for="cash">Cashtown Daily News/label></td>
+        </tr>
+    </li>
+</table>
+    <li><b>From to 
+        <input type="datetime" placeholder="mm/dd/yyyy">
+    </b>
+    <label for="to">to</label>
+    <input id="to" type="datetime" placeholder="mm/dd/yyyy"/>
+    </li>
+    <li><b>Enter a few keywords to describe the classified.  </b>
+        <table>
+        <tr>
+        <td><input type="text"></td>
+        </tr>
+    </table>
+    </li>
+    <li><b>Click one of options below:</b>
+        <table>
+            <tr>
+                <td><input type="image" src="Search.gif" alt="Search" width="150" height="50" onclick="showAlert(event)"/></td>
+                <td> <input type="image" src="Help.gif" alt="Help" width="150" height="50"onclick="openHelpPage()"/></td>
+                <td> <input type="image" src="Cancel.gif" alt="Help" width="150" height="50" onclick="this.form.reset(); return false;"/></td>
+            </tr>
+        </table>
+    </li>
+</ol>
+</body>
+</html>
