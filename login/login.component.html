@@ -1,0 +1,36 @@
+<h1>K22411CA</h1>
+<h3><b>Đăng nhập hệ thống Quản lý giỏ hàng</b></h3>
+<table>
+    <tr>
+        <td>User Name:</td>
+        <td>
+            <input type="text" value="{{user_name_default}}" id="txtuser" name="txtuser" #txtuser>
+        </td>
+    </tr>
+    <tr>
+        <td>Password:</td>
+        <td>
+            <input type="password" id="txtpassword" name="txtpassword" #txtpassword>
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>
+            <input type="checkbox" id="chksave" value="on">
+            <label for="chksave">Save login infor</label>
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>
+            <button (click)="send_user_pass(txtuser.value,txtpassword.value)">Login</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <p class="{{red_color_footer}}">Designed by Tèo</p>
+            <p class="{{bold_format_footer}}">Designed by Tèo</p>
+            <p class="{{red_bold_format_footer}}">Designed by Tèo</p>
+        </td>
+    </tr>
+</table>
