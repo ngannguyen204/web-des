@@ -1,0 +1,35 @@
+.edit-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .thumbnail-preview {
+    max-width: 100px;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  button {
+    margin-right: 10px;
+  }
+  

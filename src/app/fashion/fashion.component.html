@@ -1,0 +1,40 @@
+<app-fashion-new 
+    *ngIf="showAddForm"
+    (fashionAdded)="onFashionAdded()"
+    (cancel)="showAddForm = false">
+</app-fashion-new>
+
+<h2>FASHION LIST</h2>
+{{errMessage}} 
+<div style="margin-bottom: 10px;">
+<button (click)="addFashion()">Add New Fashion</button>
+</div>
+<table id="fashionlist"> 
+<tr> 
+<th>Id</th> 
+<th>Fashion Subject</th> 
+<th>Fashion Style</th> 
+<th>Thumbnail</th> 
+<th>Action</th>
+</tr> 
+<tbody> 
+<tr  *ngFor="let fashion of fashions"> 
+<td>{{fashion._id}}</td> 
+<td>{{fashion.fashion_subject}}</td> 
+<td>{{fashion.style}} </td> 
+<td> 
+<img src="{{fashion.fashion_image}}" width="100px" height="100px"> 
+</td> 
+<td>
+    <button (click)="editFashion(fashion)">Edit</button>
+    <button (click)="deleteFashion(fashion._id)">Delete</button>
+</td>
+</tr> 
+</tbody> 
+</table> 
+<app-fashion-delete 
+    *ngIf="showDeletePopup"
+    [fashionId]="targetFashionId"
+    (deleteConfirmed)="onDeleteConfirmed()"
+    (deleteCancelled)="onDeleteCancelled()">
+</app-fashion-delete>
