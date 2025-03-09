@@ -1,0 +1,30 @@
+<h3>Add New Fashion</h3>
+<form [formGroup]="fashionForm">
+    <div>
+        <label>Subject:</label>
+        <input type="text" formControlName="fashion_subject">
+    </div>
+    <div>
+        <label>Style:</label>
+        <input type="text" formControlName="style">
+    </div>
+    <div>
+        <div>
+            <label>Detail:</label>
+            <textarea formControlName="fashion_detail"></textarea>
+        </div>
+            </div>
+    <div>
+        <label>Image:</label>
+        <input type="file" (change)="onFileChange($event)">
+        <div *ngIf="imagePreview">
+            <label>Preview:</label>
+            <img [src]="imagePreview" alt="Fashion Image" style="max-width: 200px; max-height: 200px;">
+        </div>
+        
+    </div>
+    <div style="margin-top: 10px;">
+        <button type="button" (click)="save()">Save</button>
+        <button type="button" (click)="cancelAdd()">Cancel</button>
+    </div>
+</form>

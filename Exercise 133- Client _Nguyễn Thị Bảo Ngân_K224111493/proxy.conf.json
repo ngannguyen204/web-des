@@ -1,0 +1,8 @@
+{
+    "/fashions": {
+        "target": "http://localhost:4002",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    }
+}

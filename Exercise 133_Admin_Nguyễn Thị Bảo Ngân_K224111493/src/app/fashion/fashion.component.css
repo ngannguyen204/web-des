@@ -1,0 +1,14 @@
+#fashionlist{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+#fashionlist tr th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#fashionlist tr td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin:5px;
+    padding: 5px;
+}

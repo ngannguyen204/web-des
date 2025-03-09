@@ -1,0 +1,21 @@
+<h2>Fashion Collection</h2>
+
+<!-- Thanh tìm kiếm -->
+<div style="margin-left: 5px; margin-bottom: 10px;">
+  <input type="text" [formControl]="searchControl" placeholder="Search by style">
+  <select (change)="onStyleChange($event)" style="margin-left: 20px;">
+    <option value="">All Styles</option> <!-- Hiển thị tất cả -->
+    <option *ngFor="let style of styles" [value]="style">{{ style }}</option>
+  </select>  
+</div>
+
+<!-- Hiển thị tất cả fashion -->
+<div class="fashion-list">
+  <div *ngFor="let fashion of filteredFashions" class="fashion-item" (click)="viewDetails(fashion)">
+    <img [src]="fashion.fashion_image" alt="{{ fashion.fashion_subject }} ">
+    <p>{{ fashion.fashion_subject }}</p>
+  </div>
+</div>
+
+
+  
